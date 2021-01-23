@@ -1,0 +1,38 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/emre/chip8_interpreter/src/chip8.h
+stdint.h
+-
+stdio.h
+-
+
+/home/emre/chip8_interpreter/src/utils.c
+stdio.h
+-
+stdlib.h
+-
+errno.h
+-
+string.h
+-
+ncurses.h
+-
+chip8.h
+/home/emre/chip8_interpreter/src/chip8.h
+utils.h
+/home/emre/chip8_interpreter/src/utils.h
+
+/home/emre/chip8_interpreter/src/utils.h
+stdint.h
+-
+ncurses.h
+-
+chip8.h
+/home/emre/chip8_interpreter/src/chip8.h
+
