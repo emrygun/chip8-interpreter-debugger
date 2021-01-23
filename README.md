@@ -15,7 +15,7 @@ A basic CHIP-8 Interpreter with debugger. Interpreter's gui is powered by ncurse
 ## Notes
 Keep in mind:
 * Sound not implemented.
-* Refreshing rate is not stable.
+* Refreshing rate is not stable. <br/>
 I'll fix these issues soon.
 	
 ## Setup
