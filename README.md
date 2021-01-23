@@ -13,10 +13,10 @@
 A basic CHIP-8 Interpreter with debugger. Interpreter's gui is powered by ncurses.<br/>
 	
 ## Notes
-
-* Lorem version: 12.3
-* Ipsum version: 2.33
-* Ament library version: 999
+Keep in mind:
+* Sound not implemented.
+* Refreshing rate is not stable.
+I'll fix these issues soon.
 	
 ## Setup
 You'll need "libncurses5" and "CMake" to compile project
