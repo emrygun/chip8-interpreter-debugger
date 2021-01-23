@@ -7,9 +7,7 @@
 * [Usage](#usage)
 
 ## General info
-A basic CHIP-8 Interpreter with debugger.<br />
-Interpreter's gui is powered by ncurses.<br/>
-![chip8-interpreter-debugger](https://raw.githubusercontent.com/emrygun/chip8-interpreter-debugger/main/2021-01-23_22-20.png?token=AKRJFVMAU6NOMG2UKXX73D3ABR34A)
+![chip8-interpreter-debugger](https://raw.githubusercontent.com/emrygun/chip8-interpreter-debugger/main/2021-01-23_22-20.png?token=AKRJFVMAU6NOMG2UKXX73D3ABR34A) <br/>A basic CHIP-8 Interpreter with debugger. Interpreter's gui is powered by ncurses.<br/>
 	
 ## Notes
 
