@@ -34,9 +34,7 @@ struct chip8{
     uint8_t gfxBuffer[64 * 32]; 
 
     OP currentOP;           //Holds the current opcode
-    uint8_t current_key
-    
-    uint8_t activeKey;
+
     uint8_t screenUpdate;
 };
 

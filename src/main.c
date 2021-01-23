@@ -6,7 +6,6 @@
 #include "utils.h"
 
 int main(int argc, const char **argv){
-    printf("(~~) CHIP-8 Terminal Emulator (~~)\n");
 
     //Check the arg count
     if (argc <= 1){
@@ -20,6 +19,9 @@ int main(int argc, const char **argv){
             case 'd':   //Disassembler
                 chip8Disassembler(loadROM(argv[2]));
                 break;
+            case 's':
+                chip8Interpreter(loadROM(argv[2]), 1);
+                break;
             default:    //Default
                 printf("Bad usage. Try \"chip8Interpreter --help\" for more information\n");
                 break;
@@ -27,7 +29,7 @@ int main(int argc, const char **argv){
     }
 
     else{
-        chip8Interpreter(loadROM(argv[1]));
+        chip8Interpreter(loadROM(argv[1]), 0);
     }
     return 0;
 }   

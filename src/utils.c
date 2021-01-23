@@ -17,7 +17,6 @@ FILE_ROM loadROM(const char ROMdir[]){
     } 
     else{
         memcpy(ROM.ROMName, ROMdir, 100);
-        printf("(+) \"%s\" successfully oppened.\n", ROM.ROMName);
     }
     
     //Get ROM size and copy context into buffer
@@ -25,7 +24,6 @@ FILE_ROM loadROM(const char ROMdir[]){
     ROM.size = ftell(ROM.ROM);
     rewind(ROM.ROM);
     fread(ROM.buffer, ROM.size, 1, ROM.ROM);
-    printf("(+) ROM Size = 0x%x\n", ROM.size);
     return ROM;
 }
 
@@ -92,7 +90,8 @@ void chip8DebuggerUpdate(chip8 *self, WINDOW *reg, WINDOW *op, WINDOW *stack, WI
     }
 }
 
-void chip8Interpreter(FILE_ROM tempROM){
+void chip8Interpreter(FILE_ROM tempROM, int step){
+    int stepFlag = step;
     int temp;
     chip8 *myChip8 = malloc(sizeof(chip8));
     chip8Init(myChip8, tempROM);
@@ -147,7 +146,7 @@ void chip8Interpreter(FILE_ROM tempROM){
     //Fill
     rectangle(30, 131, 33, 178);
     mvprintw(30, 133, "======= CHIP-8 Interpreter/ Debugger =======");
-    mvprintw(32, 133, "Step-By-Step Mode: [-]");
+    mvprintw(32, 133, "Step-By-Step Mode: [%c]", (stepFlag ? '+' : '-'));
     for (temp = 0; temp < 30; temp++) mvhline(temp, 150, 0, 28);
     refresh();
 
@@ -161,8 +160,9 @@ void chip8Interpreter(FILE_ROM tempROM){
         wrefresh(stackScreen);
         wrefresh(timerScreen);
         refresh();
-        napms(2);
-        //while (getch() != ' ');
+        napms(5);
+        //Step by step mode
+        if (stepFlag) while (getch() != ' '); 
         if(executeOP(myChip8)) myChip8->PC += 2;
         if(myChip8->screenUpdate) chip8ScreenDraw(myChip8, interpreterScreen, 1, 1);
     }

@@ -58,7 +58,8 @@ void chip8Init(chip8 *self, FILE_ROM ROM){
 
 //Get Key
 uint8_t getKey(){
-    switch(kbhit()){
+    int c;
+    switch(c = getch()){
 
         case '4': return 0x1;
         case '5': return 0x2;
@@ -80,7 +81,7 @@ uint8_t getKey(){
         case 'b': return 0xb;
         case 'n': return 0xf; 
 
-        default: return NULL; 
+        default: return 0x10; 
     }
 }
 
@@ -150,9 +151,13 @@ uint8_t executeOP(chip8 *self){
             switch (OP_TAIL(self->currentOP.opcode)){
                 case 0x0: //CLS
                     {
-                        int i;
+                        int i, j;
                         for(i = 0; i < 64 * 32; i++)
                             self->gfxBuffer[i] = 0;
+
+                        for(i = 32; i < 0; i++)
+                            for(j = 0; j < 128; j++)
+                                mvprintw(1 + i, 1 + j, " ");
                     }
                     self->screenUpdate = 1;
                     retVal = 1; break;
@@ -160,7 +165,7 @@ uint8_t executeOP(chip8 *self){
                     self->PC = self->stack[self->SP];
                     self->SP--;
                     break;
-                default : //SYS addr SIKINTILI ve görmezden gelinebilir
+                default : //SYS addr 
                     self->PC = OP_nnn;
                     retVal = 1; break;
                 }
@@ -253,18 +258,22 @@ uint8_t executeOP(chip8 *self){
         case 0xE:
             switch (OP_TAIL(self->currentOP.opcode)){
                 case 0xE: //SKP Vx      
-                    if(self->activeKey == self->V[OP_Vx]) self->PC += 2;
+                    if(getKey() == self->V[OP_Vx]) self->PC += 2;
                     retVal = 1; break;
-                case 0x1: //SKNP Vx     BURAYA GELICEM
-                    if(self->activeKey != self->V[OP_Vx]) self->PC += 2;
+                case 0x1: //SKNP Vx    
+                    if(getKey() != self->V[OP_Vx]) self->PC += 2;
                     retVal = 1; break;
                 }
             break;
         case 0xF:
             switch (self->currentOP.opcode & 0x00FF){
                 case 0x07: self->V[OP_Vx] = self->delay_timer; retVal = 1; break; //LD Vx, DT
-                case 0x0A:  //LD Vx, K      //DOLDURUCAM 
-                    getch();
+                case 0x0A:  //LD Vx, K
+                   {
+                        char c;
+                        while ((c = getKey()) > 0x10); self->V[OP_Vx] = c;
+                        break;
+                   }
                     retVal = 1; break;
                 case 0x15: self->delay_timer = self->V[OP_Vx]; retVal = 1; break; //LD DT, Vx
                 case 0x18: self->sound_timer = self->V[OP_Vx]; retVal = 1; break; //LD ST, Vx

@@ -4,9 +4,9 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
-  "/home/emre/chip8_interpreter/src/chip8.c" "/home/emre/chip8_interpreter/make/CMakeFiles/chip8Interpreter.dir/src/chip8.c.o"
-  "/home/emre/chip8_interpreter/src/main.c" "/home/emre/chip8_interpreter/make/CMakeFiles/chip8Interpreter.dir/src/main.c.o"
-  "/home/emre/chip8_interpreter/src/utils.c" "/home/emre/chip8_interpreter/make/CMakeFiles/chip8Interpreter.dir/src/utils.c.o"
+  "/home/emre/repos/chip8-interpreter-debugger/src/chip8.c" "/home/emre/repos/chip8-interpreter-debugger/make/CMakeFiles/chip8Interpreter.dir/src/chip8.c.o"
+  "/home/emre/repos/chip8-interpreter-debugger/src/main.c" "/home/emre/repos/chip8-interpreter-debugger/make/CMakeFiles/chip8Interpreter.dir/src/main.c.o"
+  "/home/emre/repos/chip8-interpreter-debugger/src/utils.c" "/home/emre/repos/chip8-interpreter-debugger/make/CMakeFiles/chip8Interpreter.dir/src/utils.c.o"
   )
 set(CMAKE_C_COMPILER_ID "GNU")
 
