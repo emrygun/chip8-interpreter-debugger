@@ -8,7 +8,7 @@
 * [Usage](#usage)
 
 ## General info
-A basic CHIP-8 Interpreter with debugger. Interpreter's gui is powered by ncurses.<br/>
+A basic CHIP-8 Interpreter with debugger. Interpreter's gui is powered by ncurses. Built just for fun.<br/>
 	
 ## Notes
 Keep in mind:
