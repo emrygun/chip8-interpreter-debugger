@@ -9,7 +9,7 @@
 * [Technical Reference and Contact](#technical-reference-and-contact)
 
 ## General info
-A basic CHIP-8 Interpreter with debugger. Interpreter's gui is powered by ncurses. Developed just for fun.<br/>
+A basic CHIP-8 Interpreter CLI with debugger. Interpreter's gui is powered by ncurses. Developed just for fun.<br/>
 	
 ## Notes
 Keep in mind:
