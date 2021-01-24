@@ -29,14 +29,14 @@ $ cd chip8-interpreter-debugger
 $ mkdir make
 $ cd make
 $ cmake ../
-
+$ make
 ```
 
 ## Usage
 * As Interpreter:
 ```
 $ ./chip8-interpreter-debugger <rom_directory>
-```
+``` 
 * As Debugger:
 ```
 $ ./chip8-interpreter-debugger -s <rom_directory>
@@ -55,6 +55,6 @@ Keypad: <br/>
 * To next step on debugger <kbd>SPACEBAR</kbd><br/>
 * To Terminate <kbd>CTRL</kbd> + <kbd>C</kbd>
 
-## Techinal Reference and Conctact
+## Techinal Reference and Contact
 Technical reference: <a href="http://devernay.free.fr/hacks/chip8/C8TECH10.HTM">Cowgod's Chip-8 Technical Reference</a><br/>
 Contact: emre6271@gmail.com
