@@ -55,6 +55,6 @@ Keypad: <br/>
 * To next step on debugger <kbd>SPACEBAR</kbd><br/>
 * To Terminate <kbd>CTRL</kbd> + <kbd>C</kbd>
 
-## Techinal Reference and Contact
+## Technical Reference and Contact
 Technical reference: <a href="http://devernay.free.fr/hacks/chip8/C8TECH10.HTM">Cowgod's Chip-8 Technical Reference</a><br/>
 Contact: emre6271@gmail.com
