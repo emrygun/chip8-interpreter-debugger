@@ -8,7 +8,7 @@ else()
   set(CMAKE_CXX_EXTENSIONS OFF)
 endif()
 
-project(chip8Interpreter)
+project(chip8interpreter-debugger)
 
 find_package(Curses REQUIRED)
 
@@ -21,8 +21,8 @@ set(SOURCES
 	src/chip8.h
  	src/utils.h)
 
-add_executable(chip8Interpreter ${SOURCES})
+add_executable(chip8interpreter-debugger ${SOURCES})
 
-target_link_libraries(chip8Interpreter ${CURSES_LIBRARY})
+target_link_libraries(chip8interpreter-debugger ${CURSES_LIBRARY})
 
-install(TARGETS chip8Interpreter DESTINATION make)
+install(TARGETS chip8interpreter-debugger DESTINATION make)
