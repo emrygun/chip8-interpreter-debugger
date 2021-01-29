@@ -1,5 +1,5 @@
-# chip8-interpreter-debugger
-
+# chip8-interpreter-debugger 
+![CMake](https://github.com/emrygun/chip8-interpreter-debugger/workflows/CMake/badge.svg)
 ![chip8-interpreter-debugger](https://raw.githubusercontent.com/emrygun/chip8-interpreter-debugger/main/2021-01-23_22-20.png?token=AKRJFVOK3HVHR3FTXMU7FXLABR4TC)
 ## Table of contents
 * [General info](#general-info)
