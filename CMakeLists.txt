@@ -17,9 +17,9 @@ include_directories( ${CURSES_INCLUDE_DIRS} )
 set(SOURCES
 	src/main.c
 	src/chip8.c
-    src/utils.c
+   	src/utils.c
 	src/chip8.h
-    src/utils.h)
+ 	src/utils.h)
 
 add_executable(chip8-interpreter-debugger ${SOURCES})
 
