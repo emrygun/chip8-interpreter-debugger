@@ -119,5 +119,5 @@ set(CMAKE_MAKEFILE_PRODUCTS
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
-  "CMakeFiles/chip8Interpreter.dir/DependInfo.cmake"
+  "CMakeFiles/chip8-interpreter-debugger.dir/DependInfo.cmake"
   )

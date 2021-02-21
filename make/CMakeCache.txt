@@ -139,7 +139,7 @@ CMAKE_PROJECT_DESCRIPTION:STATIC=
 CMAKE_PROJECT_HOMEPAGE_URL:STATIC=
 
 //Value Computed by CMake
-CMAKE_PROJECT_NAME:STATIC=chip8Interpreter
+CMAKE_PROJECT_NAME:STATIC=chip8-interpreter-debugger
 
 //Path to a program.
 CMAKE_RANLIB:FILEPATH=/usr/bin/ranlib
@@ -213,10 +213,10 @@ CURSES_INCLUDE_PATH:PATH=/usr/include
 CURSES_NCURSES_LIBRARY:FILEPATH=/usr/lib/x86_64-linux-gnu/libncurses.so
 
 //Value Computed by CMake
-chip8Interpreter_BINARY_DIR:STATIC=/home/emre/repos/chip8-interpreter-debugger/make
+chip8-interpreter-debugger_BINARY_DIR:STATIC=/home/emre/repos/chip8-interpreter-debugger/make
 
 //Value Computed by CMake
-chip8Interpreter_SOURCE_DIR:STATIC=/home/emre/repos/chip8-interpreter-debugger
+chip8-interpreter-debugger_SOURCE_DIR:STATIC=/home/emre/repos/chip8-interpreter-debugger
 
 
 ########################

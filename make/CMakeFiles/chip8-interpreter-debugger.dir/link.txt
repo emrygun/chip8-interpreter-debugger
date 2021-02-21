@@ -1,0 +1,1 @@
+/usr/bin/cc   -rdynamic CMakeFiles/chip8-interpreter-debugger.dir/src/main.c.o CMakeFiles/chip8-interpreter-debugger.dir/src/chip8.c.o CMakeFiles/chip8-interpreter-debugger.dir/src/utils.c.o  -o chip8-interpreter-debugger -lcurses 

@@ -6,37 +6,21 @@
 
 #IncludeRegexTransform: 
 
-/home/emre/repos/chip8-interpreter-debugger/src/chip8.c
-chip8.h
-/home/emre/repos/chip8-interpreter-debugger/src/chip8.h
-stdlib.h
--
-stdint.h
--
-time.h
--
-ncurses.h
--
-
 /home/emre/repos/chip8-interpreter-debugger/src/chip8.h
 stdint.h
 -
 stdio.h
 -
 
-/home/emre/repos/chip8-interpreter-debugger/src/utils.c
+/home/emre/repos/chip8-interpreter-debugger/src/main.c
 stdio.h
--
-stdlib.h
 -
 errno.h
 -
 string.h
 -
-ncurses.h
+stdlib.h
 -
-chip8.h
-/home/emre/repos/chip8-interpreter-debugger/src/chip8.h
 utils.h
 /home/emre/repos/chip8-interpreter-debugger/src/utils.h
 

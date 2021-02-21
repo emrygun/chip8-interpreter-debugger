@@ -157,17 +157,17 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named chip8Interpreter
+# Target rules for targets named chip8-interpreter-debugger
 
 # Build rule for target.
-chip8Interpreter: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 chip8Interpreter
-.PHONY : chip8Interpreter
+chip8-interpreter-debugger: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 chip8-interpreter-debugger
+.PHONY : chip8-interpreter-debugger
 
 # fast build rule for target.
-chip8Interpreter/fast:
-	$(MAKE) -f CMakeFiles/chip8Interpreter.dir/build.make CMakeFiles/chip8Interpreter.dir/build
-.PHONY : chip8Interpreter/fast
+chip8-interpreter-debugger/fast:
+	$(MAKE) -f CMakeFiles/chip8-interpreter-debugger.dir/build.make CMakeFiles/chip8-interpreter-debugger.dir/build
+.PHONY : chip8-interpreter-debugger/fast
 
 src/chip8.o: src/chip8.c.o
 
@@ -175,7 +175,7 @@ src/chip8.o: src/chip8.c.o
 
 # target to build an object file
 src/chip8.c.o:
-	$(MAKE) -f CMakeFiles/chip8Interpreter.dir/build.make CMakeFiles/chip8Interpreter.dir/src/chip8.c.o
+	$(MAKE) -f CMakeFiles/chip8-interpreter-debugger.dir/build.make CMakeFiles/chip8-interpreter-debugger.dir/src/chip8.c.o
 .PHONY : src/chip8.c.o
 
 src/chip8.i: src/chip8.c.i
@@ -184,7 +184,7 @@ src/chip8.i: src/chip8.c.i
 
 # target to preprocess a source file
 src/chip8.c.i:
-	$(MAKE) -f CMakeFiles/chip8Interpreter.dir/build.make CMakeFiles/chip8Interpreter.dir/src/chip8.c.i
+	$(MAKE) -f CMakeFiles/chip8-interpreter-debugger.dir/build.make CMakeFiles/chip8-interpreter-debugger.dir/src/chip8.c.i
 .PHONY : src/chip8.c.i
 
 src/chip8.s: src/chip8.c.s
@@ -193,7 +193,7 @@ src/chip8.s: src/chip8.c.s
 
 # target to generate assembly for a file
 src/chip8.c.s:
-	$(MAKE) -f CMakeFiles/chip8Interpreter.dir/build.make CMakeFiles/chip8Interpreter.dir/src/chip8.c.s
+	$(MAKE) -f CMakeFiles/chip8-interpreter-debugger.dir/build.make CMakeFiles/chip8-interpreter-debugger.dir/src/chip8.c.s
 .PHONY : src/chip8.c.s
 
 src/main.o: src/main.c.o
@@ -202,7 +202,7 @@ src/main.o: src/main.c.o
 
 # target to build an object file
 src/main.c.o:
-	$(MAKE) -f CMakeFiles/chip8Interpreter.dir/build.make CMakeFiles/chip8Interpreter.dir/src/main.c.o
+	$(MAKE) -f CMakeFiles/chip8-interpreter-debugger.dir/build.make CMakeFiles/chip8-interpreter-debugger.dir/src/main.c.o
 .PHONY : src/main.c.o
 
 src/main.i: src/main.c.i
@@ -211,7 +211,7 @@ src/main.i: src/main.c.i
 
 # target to preprocess a source file
 src/main.c.i:
-	$(MAKE) -f CMakeFiles/chip8Interpreter.dir/build.make CMakeFiles/chip8Interpreter.dir/src/main.c.i
+	$(MAKE) -f CMakeFiles/chip8-interpreter-debugger.dir/build.make CMakeFiles/chip8-interpreter-debugger.dir/src/main.c.i
 .PHONY : src/main.c.i
 
 src/main.s: src/main.c.s
@@ -220,7 +220,7 @@ src/main.s: src/main.c.s
 
 # target to generate assembly for a file
 src/main.c.s:
-	$(MAKE) -f CMakeFiles/chip8Interpreter.dir/build.make CMakeFiles/chip8Interpreter.dir/src/main.c.s
+	$(MAKE) -f CMakeFiles/chip8-interpreter-debugger.dir/build.make CMakeFiles/chip8-interpreter-debugger.dir/src/main.c.s
 .PHONY : src/main.c.s
 
 src/utils.o: src/utils.c.o
@@ -229,7 +229,7 @@ src/utils.o: src/utils.c.o
 
 # target to build an object file
 src/utils.c.o:
-	$(MAKE) -f CMakeFiles/chip8Interpreter.dir/build.make CMakeFiles/chip8Interpreter.dir/src/utils.c.o
+	$(MAKE) -f CMakeFiles/chip8-interpreter-debugger.dir/build.make CMakeFiles/chip8-interpreter-debugger.dir/src/utils.c.o
 .PHONY : src/utils.c.o
 
 src/utils.i: src/utils.c.i
@@ -238,7 +238,7 @@ src/utils.i: src/utils.c.i
 
 # target to preprocess a source file
 src/utils.c.i:
-	$(MAKE) -f CMakeFiles/chip8Interpreter.dir/build.make CMakeFiles/chip8Interpreter.dir/src/utils.c.i
+	$(MAKE) -f CMakeFiles/chip8-interpreter-debugger.dir/build.make CMakeFiles/chip8-interpreter-debugger.dir/src/utils.c.i
 .PHONY : src/utils.c.i
 
 src/utils.s: src/utils.c.s
@@ -247,7 +247,7 @@ src/utils.s: src/utils.c.s
 
 # target to generate assembly for a file
 src/utils.c.s:
-	$(MAKE) -f CMakeFiles/chip8Interpreter.dir/build.make CMakeFiles/chip8Interpreter.dir/src/utils.c.s
+	$(MAKE) -f CMakeFiles/chip8-interpreter-debugger.dir/build.make CMakeFiles/chip8-interpreter-debugger.dir/src/utils.c.s
 .PHONY : src/utils.c.s
 
 # Help Target
@@ -258,7 +258,7 @@ help:
 	@echo "... depend"
 	@echo "... install/strip"
 	@echo "... edit_cache"
-	@echo "... chip8Interpreter"
+	@echo "... chip8-interpreter-debugger"
 	@echo "... rebuild_cache"
 	@echo "... list_install_components"
 	@echo "... install/local"

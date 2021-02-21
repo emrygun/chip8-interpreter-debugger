@@ -38,17 +38,17 @@ if(NOT DEFINED CMAKE_CROSSCOMPILING)
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/make/chip8Interpreter" AND
-     NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/make/chip8Interpreter")
+  if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/make/chip8-interpreter-debugger" AND
+     NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/make/chip8-interpreter-debugger")
     file(RPATH_CHECK
-         FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/make/chip8Interpreter"
+         FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/make/chip8-interpreter-debugger"
          RPATH "")
   endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/make" TYPE EXECUTABLE FILES "/home/emre/repos/chip8-interpreter-debugger/make/chip8Interpreter")
-  if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/make/chip8Interpreter" AND
-     NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/make/chip8Interpreter")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/make" TYPE EXECUTABLE FILES "/home/emre/repos/chip8-interpreter-debugger/make/chip8-interpreter-debugger")
+  if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/make/chip8-interpreter-debugger" AND
+     NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/make/chip8-interpreter-debugger")
     if(CMAKE_INSTALL_DO_STRIP)
-      execute_process(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/make/chip8Interpreter")
+      execute_process(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/make/chip8-interpreter-debugger")
     endif()
   endif()
 endif()
