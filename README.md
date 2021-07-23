@@ -20,8 +20,19 @@ I'll fix these issues soon.
 	
 ## Setup
 You'll need "libncurses5" and "CMake" to compile project
+
+```
 libncurses installation
 
+Debian/Ubuntu
+$ sudo apt-get install libncurses5-dev libncursesw5-dev
+
+CentOS/RHEL/Scientific Linux 6.x/7.x+ and Fedora Linux 21 or older
+$ sudo yum install ncurses-devel
+
+Fedora Linux 22.x+
+$ sudo dnf install ncurses-devel
+```
 After you clone the project:
 
 ```
